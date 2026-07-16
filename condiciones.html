@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service · Anova Viral</title>
+<meta name="description" content="Terms of Service of Anova Viral — faceless video studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#061525; --navy2:#0a1d33; --azul:#02509b; --cian:#00a3d6;
+    --txt:#0c1626; --mut:#748499; --line:#dbe4f0; --bg:#eaf0f8;
+    --grad:linear-gradient(135deg,#02509b,#00a3d6);
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:'Geist', system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--txt);
+    -webkit-font-smoothing:antialiased; line-height:1.7; }
+  ::selection{ background:rgba(0,163,214,.28); }
+
+  @keyframes fadeUp{ from{ opacity:0; transform:translateY(18px);} to{ opacity:1; transform:none;} }
+  @keyframes shimmer{ 0%{ background-position:-160% 0;} 100%{ background-position:260% 0;} }
+  @keyframes floaty{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-5px);} }
+  @keyframes ringPulse{ 0%{ transform:scale(.9); opacity:.5;} 70%{ transform:scale(1.6); opacity:0;} 100%{ opacity:0;} }
+
+  /* ---------- HERO ---------- */
+  .hero{ position:relative; overflow:hidden; background:linear-gradient(185deg,#0a1d33 0%,#061525 100%); color:#fff;
+    padding:74px 24px 120px; text-align:center; }
+  .hero::before{ content:''; position:absolute; top:-140px; right:-90px; width:480px; height:480px; border-radius:50%;
+    background:radial-gradient(circle, rgba(0,144,196,.28), transparent 68%); pointer-events:none; }
+  .hero::after{ content:''; position:absolute; bottom:-160px; left:-120px; width:420px; height:420px; border-radius:50%;
+    background:radial-gradient(circle, rgba(2,80,155,.30), transparent 70%); pointer-events:none; }
+  .logopill{ position:relative; display:inline-block; background:#fff; border-radius:20px; padding:18px 30px 14px;
+    box-shadow:0 18px 44px rgba(4,18,35,.5); animation:fadeUp .6s ease both, floaty 5s ease-in-out 1s infinite; }
+  .logopill svg{ display:block; width:min(250px,60vw); height:auto; }
+  .hero h1{ position:relative; font-size:clamp(34px,6vw,52px); font-weight:800; letter-spacing:-.02em; margin-top:34px;
+    animation:fadeUp .6s ease .1s both; }
+  .hero h1 em{ font-style:normal; background:linear-gradient(90deg,#7dd3fc,#00a3d6); -webkit-background-clip:text;
+    background-clip:text; color:transparent; }
+  .hero p{ position:relative; opacity:.78; margin-top:14px; font-size:16px; animation:fadeUp .6s ease .18s both; }
+  .chipdate{ position:relative; display:inline-flex; align-items:center; gap:8px; margin-top:22px; font-size:13px; font-weight:600;
+    background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); border-radius:99px; padding:8px 16px;
+    backdrop-filter:blur(6px); animation:fadeUp .6s ease .26s both; }
+  .chipdate .dot{ position:relative; width:8px; height:8px; }
+  .chipdate .dot::before{ content:''; position:absolute; inset:0; border-radius:50%; background:#5ff0b0; animation:ringPulse 2.2s ease-out infinite; }
+  .chipdate .dot::after{ content:''; position:absolute; inset:0; border-radius:50%; background:#5ff0b0; }
+
+  /* ---------- CARD ---------- */
+  .wrap{ position:relative; max-width:880px; margin:-64px auto 70px; padding:0 20px; }
+  .card{ background:#fff; border:1px solid var(--line); border-radius:22px; padding:clamp(28px,5vw,52px);
+    box-shadow:0 30px 70px -20px rgba(6,21,37,.35); animation:fadeUp .6s ease .3s both; }
+
+  .sec{ display:flex; gap:18px; padding:26px 0; border-bottom:1px solid #eef2f7; }
+  .sec:last-of-type{ border-bottom:none; }
+  .ic{ flex:none; width:46px; height:46px; border-radius:14px; background:var(--grad); color:#fff;
+    display:flex; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(2,88,158,.30); }
+  .sec h2{ font-size:18px; font-weight:700; letter-spacing:-.01em; margin-bottom:8px; }
+  .sec h2 small{ color:var(--cian); font-weight:700; margin-right:8px; }
+  .sec p, .sec li{ font-size:15px; color:#41506b; }
+  .sec ul{ margin:10px 0 0; list-style:none; }
+  .sec li{ position:relative; padding-left:26px; margin-bottom:8px; }
+  .sec li::before{ content:''; position:absolute; left:0; top:8px; width:14px; height:14px; border-radius:50%;
+    background:linear-gradient(135deg,rgba(2,80,155,.15),rgba(0,163,214,.2)); }
+  .sec li::after{ content:''; position:absolute; left:4px; top:12px; width:6px; height:3.5px;
+    border-left:2px solid var(--azul); border-bottom:2px solid var(--azul); transform:rotate(-45deg); }
+  a{ color:var(--azul); font-weight:600; text-decoration:none; border-bottom:1.5px solid rgba(0,163,214,.35); }
+  a:hover{ border-bottom-color:var(--cian); }
+
+  .note{ margin-top:30px; border-radius:16px; padding:20px 24px; color:#fff; position:relative; overflow:hidden;
+    background:linear-gradient(120deg,#012140 0%,#02509b 55%,#0090c4 100%); box-shadow:0 14px 34px rgba(12,80,140,.35); }
+  .note::before{ content:''; position:absolute; inset:0;
+    background:linear-gradient(100deg, transparent 30%, rgba(255,255,255,.18) 50%, transparent 70%);
+    background-size:220% 100%; animation:shimmer 6s linear infinite; }
+  .note b{ display:block; font-size:15px; margin-bottom:4px; position:relative; }
+  .note p{ font-size:13.5px; opacity:.9; position:relative; }
+  .note a{ color:#bdf3ff; border-bottom-color:rgba(189,243,255,.4); }
+
+  footer{ text-align:center; padding:0 20px 56px; color:var(--mut); font-size:13px; }
+  footer .mini{ display:inline-flex; align-items:center; gap:8px; }
+  @media (max-width:560px){ .sec{ flex-direction:column; gap:10px; } }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="logopill"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 839 245"><defs><linearGradient id="blue" x1="20" y1="170" x2="170" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0E5C97"/><stop offset="1" stop-color="#2CB6E2"/></linearGradient><linearGradient id="coral" x1="30" y1="160" x2="170" y2="80" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E45B39"/><stop offset="1" stop-color="#F4946D"/></linearGradient><linearGradient id="bt" x1="264" y1="0" x2="831.3" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0E5C97"/><stop offset="1" stop-color="#2CB6E2"/></linearGradient><linearGradient id="ct" x1="654.3" y1="0" x2="831.3" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#E45B39"/><stop offset="1" stop-color="#F4946D"/></linearGradient></defs><g transform="translate(-34,-26) scale(1.60)"><g stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M 40.00,150.00 L 82.00,102.00 L 110.00,134.00 L 138.00,92.00" stroke="url(#coral)" stroke-width="15"/><path d="M 34.00,116.00 L 76.00,68.00 L 104.00,104.00 L 144.22,49.16" stroke="url(#blue)" stroke-width="16"/></g><path d="M 159.00,29.00 L 159.22,67.60 L 122.12,40.40 Z" fill="url(#blue)"/><g fill="url(#coral)"><circle cx="40" cy="150" r="9.5"/><circle cx="82" cy="102" r="9.5"/><circle cx="110" cy="134" r="9.5"/><circle cx="138" cy="92" r="9.5"/></g><g fill="#fff" stroke="url(#blue)" stroke-width="5.5"><circle cx="34" cy="116" r="9"/><circle cx="76" cy="68" r="9"/><circle cx="104" cy="104" r="9"/></g></g><path d="M277.65 139.35Q273.45 139.35 270.825 137.39999999999998Q268.2 135.45 267.525 132.14999999999998Q266.85 128.85 268.8 124.8L307.2 40.650000000000006Q309.6 35.55 312.9 33.225Q316.2 30.900000000000006 320.55 30.900000000000006Q324.9 30.900000000000006 328.2 33.225Q331.5 35.55 333.75 40.650000000000006L372.45 124.8Q374.4 128.85 373.875 132.225Q373.35 135.6 370.8 137.475Q368.25 139.35 364.2 139.35Q359.1 139.35 356.32500000000005 136.95Q353.55 134.55 351.45 129.45L342.45 108.6L351.75 115.05H289.2L298.5 108.6L289.65 129.45Q287.4 134.7 284.92499999999995 137.02499999999998Q282.45 139.35 277.65 139.35ZM320.25 57.0 301.05 102.75 297.0 96.9H343.95L339.9 102.75L320.55 57.0Z M398.4 139.35Q393.15 139.35 390.375 136.425Q387.59999999999997 133.5 387.59999999999997 128.1V42.60000000000001Q387.59999999999997 36.900000000000006 390.375 33.900000000000006Q393.15 30.900000000000006 397.8 30.900000000000006Q401.84999999999997 30.900000000000006 404.025 32.475Q406.2 34.05 409.05 37.650000000000006L461.7 104.7H457.65V42.0Q457.65 36.75 460.42499999999995 33.825Q463.2 30.900000000000006 468.45 30.900000000000006Q473.7 30.900000000000006 476.475 33.825Q479.25 36.75 479.25 42.0V128.55Q479.25 133.5 476.7 136.425Q474.15 139.35 469.79999999999995 139.35Q465.59999999999997 139.35 463.125 137.7Q460.65 136.05 457.79999999999995 132.45L405.3 65.4H409.2V128.1Q409.2 133.5 406.5 136.425Q403.8 139.35 398.4 139.35Z M549.6 139.65Q534.0 139.65 522.225 132.825Q510.45 126.0 503.92499999999995 113.7Q497.4 101.4 497.4 85.05000000000001Q497.4 72.60000000000001 501.075 62.62500000000001Q504.75 52.650000000000006 511.65 45.525000000000006Q518.55 38.400000000000006 528.2249999999999 34.50000000000001Q537.9 30.60000000000001 549.6 30.60000000000001Q565.5 30.60000000000001 577.2 37.35000000000001Q588.9 44.10000000000001 595.425 56.325Q601.9499999999999 68.55 601.9499999999999 84.9Q601.9499999999999 97.35 598.1999999999999 107.4Q594.4499999999999 117.45 587.55 124.65Q580.65 131.85 571.05 135.75Q561.4499999999999 139.65 549.6 139.65ZM549.6 119.85Q558.4499999999999 119.85 564.675 115.725Q570.9 111.6 574.275 103.725Q577.65 95.85 577.65 85.05000000000001Q577.65 68.55 570.3 59.475Q562.9499999999999 50.400000000000006 549.6 50.400000000000006Q540.9 50.400000000000006 534.5999999999999 54.45Q528.3 58.5 525.0 66.3Q521.6999999999999 74.1 521.6999999999999 85.05000000000001Q521.6999999999999 101.4 529.05 110.625Q536.4 119.85 549.6 119.85Z M663.9 139.35Q659.0999999999999 139.35 656.0249999999999 137.175Q652.9499999999999 135.0 651.0 130.5L613.1999999999999 46.5Q611.0999999999999 42.0 612.0 38.475Q612.9 34.95 615.75 32.925000000000004Q618.5999999999999 30.900000000000006 622.65 30.900000000000006Q627.75 30.900000000000006 630.45 33.225Q633.15 35.55 634.9499999999999 40.05L668.0999999999999 116.7H660.5999999999999L693.75 39.900000000000006Q695.6999999999999 35.400000000000006 698.3999999999999 33.150000000000006Q701.0999999999999 30.900000000000006 705.9 30.900000000000006Q709.9499999999999 30.900000000000006 712.5749999999999 32.925000000000004Q715.1999999999999 34.95 715.875 38.475Q716.55 42.0 714.5999999999999 46.5L676.8 130.5Q674.6999999999999 135.0 671.7749999999999 137.175Q668.8499999999999 139.35 663.9 139.35Z M731.9999999999999 139.35Q727.8 139.35 725.175 137.39999999999998Q722.55 135.45 721.875 132.14999999999998Q721.1999999999999 128.85 723.1499999999999 124.8L761.55 40.650000000000006Q763.9499999999999 35.55 767.25 33.225Q770.55 30.900000000000006 774.8999999999999 30.900000000000006Q779.2499999999999 30.900000000000006 782.55 33.225Q785.8499999999999 35.55 788.0999999999999 40.650000000000006L826.8 124.8Q828.7499999999999 128.85 828.2249999999999 132.225Q827.6999999999999 135.6 825.1499999999999 137.475Q822.5999999999999 139.35 818.55 139.35Q813.4499999999999 139.35 810.675 136.95Q807.8999999999999 134.55 805.8 129.45L796.8 108.6L806.0999999999999 115.05H743.55L752.8499999999999 108.6L743.9999999999999 129.45Q741.7499999999999 134.7 739.2749999999999 137.02499999999998Q736.8 139.35 731.9999999999999 139.35ZM774.5999999999999 57.0 755.3999999999999 102.75 751.3499999999999 96.9H798.3L794.2499999999999 102.75L774.8999999999999 57.0Z" fill="url(#bt)"/><rect x="268.0" y="170" width="364.3" height="5.5" rx="2.75" fill="url(#coral)"/><path d="M682.962 212.574Q681.1579999999999 212.574 679.9689999999999 211.71300000000002Q678.78 210.852 678.0419999999999 209.13L655.9839999999999 159.192Q655.328 157.47 655.656 156.24Q655.9839999999999 155.01 657.009 154.313Q658.034 153.61599999999999 659.51 153.61599999999999Q661.396 153.61599999999999 662.3799999999999 154.43599999999998Q663.3639999999999 155.256 664.02 156.89600000000002L684.684 204.784H681.65L702.15 156.814Q702.8879999999999 155.256 703.913 154.43599999999998Q704.938 153.61599999999999 706.742 153.61599999999999Q708.218 153.61599999999999 709.161 154.313Q710.1039999999999 155.01 710.3499999999999 156.24Q710.596 157.47 709.858 159.192L687.882 209.13Q687.1439999999999 210.852 685.9959999999999 211.71300000000002Q684.848 212.574 682.962 212.574Z M721.584 212.492Q719.6159999999999 212.492 718.55 211.303Q717.4839999999999 210.114 717.4839999999999 207.982V176.002Q717.4839999999999 173.87 718.55 172.722Q719.6159999999999 171.574 721.584 171.574Q723.5519999999999 171.574 724.6589999999999 172.722Q725.766 173.87 725.766 176.002V207.982Q725.766 210.114 724.6999999999999 211.303Q723.6339999999999 212.492 721.584 212.492ZM721.584 163.046Q719.1239999999999 163.046 717.771 161.816Q716.4179999999999 160.586 716.4179999999999 158.372Q716.4179999999999 156.076 717.771 154.887Q719.1239999999999 153.698 721.584 153.698Q724.0439999999999 153.698 725.3969999999999 154.887Q726.7499999999999 156.076 726.7499999999999 158.372Q726.7499999999999 160.586 725.3969999999999 161.816Q724.0439999999999 163.046 721.584 163.046Z M741.592 212.574Q739.5419999999999 212.574 738.4759999999999 211.467Q737.41 210.36 737.41 208.392V175.59199999999998Q737.41 173.542 738.4759999999999 172.476Q739.5419999999999 171.41 741.428 171.41Q743.396 171.41 744.4209999999999 172.476Q745.4459999999999 173.542 745.4459999999999 175.59199999999998V181.578H744.626Q745.938 176.65800000000002 749.4639999999999 174.116Q752.99 171.574 758.4839999999999 171.164Q759.9599999999999 171.082 760.8209999999999 171.902Q761.682 172.722 761.764 174.444Q761.928 176.166 761.0260000000001 177.191Q760.124 178.216 758.2379999999999 178.38L756.68 178.54399999999998Q751.3499999999999 179.036 748.5619999999999 181.906Q745.774 184.776 745.774 189.778V208.392Q745.774 210.36 744.749 211.467Q743.7239999999999 212.574 741.592 212.574Z M780.788 212.738Q776.606 212.738 773.285 211.098Q769.9639999999999 209.458 768.078 206.67000000000002Q766.192 203.882 766.192 200.356Q766.192 195.928 768.447 193.345Q770.702 190.762 775.909 189.655Q781.116 188.548 789.972 188.548H793.826V193.632H790.054Q784.15 193.632 780.7059999999999 194.20600000000002Q777.262 194.78 775.827 196.13299999999998Q774.3919999999999 197.486 774.3919999999999 199.864Q774.3919999999999 202.98 776.5239999999999 204.90699999999998Q778.656 206.834 782.428 206.834Q785.462 206.834 787.758 205.399Q790.054 203.964 791.4069999999999 201.50400000000002Q792.76 199.044 792.76 195.846V186.416Q792.76 181.742 790.7919999999999 179.692Q788.824 177.642 784.314 177.642Q781.6899999999999 177.642 778.8609999999999 178.298Q776.0319999999999 178.954 772.9979999999999 180.512Q771.6039999999999 181.168 770.6199999999999 180.922Q769.636 180.676 769.0619999999999 179.815Q768.4879999999999 178.954 768.4469999999999 177.929Q768.406 176.904 768.939 175.92000000000002Q769.472 174.936 770.784 174.444Q774.3919999999999 172.722 777.9179999999999 171.98399999999998Q781.444 171.24599999999998 784.56 171.24599999999998Q790.054 171.24599999999998 793.621 172.968Q797.188 174.69 798.91 178.216Q800.632 181.742 800.632 187.31799999999998V208.392Q800.632 210.36 799.6479999999999 211.467Q798.664 212.574 796.778 212.574Q794.9739999999999 212.574 793.9079999999999 211.467Q792.842 210.36 792.842 208.392V203.062H793.5799999999999Q792.924 206.096 791.1610000000001 208.269Q789.398 210.442 786.774 211.59Q784.15 212.738 780.788 212.738Z M824.904 212.738Q818.5079999999999 212.738 815.269 209.007Q812.03 205.276 812.03 198.224V157.798Q812.03 155.748 813.096 154.682Q814.1619999999999 153.61599999999999 816.13 153.61599999999999Q818.098 153.61599999999999 819.2049999999999 154.682Q820.312 155.748 820.312 157.798V197.732Q820.312 201.832 821.9929999999999 203.841Q823.674 205.85 826.872 205.85Q827.61 205.85 828.184 205.809Q828.7579999999999 205.768 829.332 205.686Q830.3159999999999 205.604 830.7259999999999 206.219Q831.136 206.834 831.136 208.72Q831.136 210.442 830.3979999999999 211.385Q829.66 212.328 828.02 212.574Q827.2819999999999 212.656 826.462 212.697Q825.6419999999999 212.738 824.904 212.738Z" fill="url(#ct)"/></svg></div>
+  <h1>Terms of <em>Service</em></h1>
+  <p>The rules for using Anova Viral — short and clear.</p>
+  <span class="chipdate"><span class="dot"></span> Last updated · July 14, 2026</span>
+</div>
+
+<div class="wrap">
+  <div class="card">
+
+    
+    <div class="sec">
+      <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l5 5v13H6z"/><path d="M14 3v6h6"/><path d="M9 13h7M9 17h7"/></svg></div>
+      <div><h2><small>01</small>Acceptance of terms</h2>
+      <p>By using Anova Viral ("the Service") you agree to these Terms. The Service is a content production tool operated by its owner to create and publish video content to social media accounts owned and authorized by the operator.</p></div>
+    </div>
+    <div class="sec">
+      <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M3 15h18M8 4v16M16 4v16"/></svg></div>
+      <div><h2><small>02</small>The service</h2>
+      <p>Anova Viral assists in producing video content (scripts, images, voice-over, editing) and publishing it through the official APIs of YouTube, TikTok, Instagram and Facebook, always to accounts connected voluntarily by their owner via each platform's OAuth flow.</p></div>
+    </div>
+    <div class="sec">
+      <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.2 7.6 8 9 4.8-1.4 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4.5"/></svg></div>
+      <div><h2><small>03</small>Acceptable use</h2>
+      <ul><li>Publish only content you have the right to use; respect copyright and each platform's community guidelines.</li>
+      <li>Do not use the Service to spam, mislead or infringe the terms of the connected platforms.</li>
+      <li>You are responsible for the content published through your connected accounts.</li></ul></div>
+    </div>
+    <div class="sec">
+      <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div><h2><small>04</small>Third-party platforms</h2>
+      <p>Publishing depends on the APIs of Google, Meta and TikTok. Their availability, policies and changes are outside our control; use of each platform is governed by its own terms of service.</p></div>
+    </div>
+    <div class="sec">
+      <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 21h20z"/><path d="M12 10v5"/><path d="M12 18.5h.01"/></svg></div>
+      <div><h2><small>05</small>Disclaimer</h2>
+      <p>The Service is provided "as is", without warranties of any kind. To the maximum extent permitted by law, we are not liable for indirect damages, loss of data, revenue or reach derived from the use of the Service or of the connected platforms.</p></div>
+    </div>
+    <div class="sec">
+      <div class="ic"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+      <div><h2><small>06</small>Changes</h2>
+      <p>We may update these Terms; the date above reflects the latest revision. Continued use of the Service after changes constitutes acceptance.</p></div>
+    </div>
+<div class="note">
+      <b>Questions?</b>
+      <p>We answer privacy inquiries at <a href="mailto:anovaviralsystem@gmail.com">anovaviralsystem@gmail.com</a> — usually within 48 hours.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span class="mini">© 2026 <b>Anova Viral</b> · <a href="https://www.anovaviral.com">anovaviral.com</a></span>
+</footer>
+
+</body>
+</html>
